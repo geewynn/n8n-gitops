@@ -13,3 +13,10 @@ patches:
       - op: replace
         path: /spec/parameters/tenantId
         value: "4183e53a-54a1-4dc5-bcb5-1a64a6fff3af"
+  - target:
+      kind: ObjectStore
+      name: customer1-objectstore
+    patch: |-
+      - op: replace
+        path: /spec/configuration/destinationPath
+        value: "https://n8nbackupsstaginggee.blob.core.windows.net/customer1"
