@@ -8,10 +8,10 @@ spec:
   ingressClassName: traefik-traefik
   tls:
     - hosts:
-        - customer1.n8n.owoicho.org
+        - customer1.n8n-staging.owoicho.org
       secretName: customer1-tls
   rules:
-    - host: customer1.n8n.owoicho.org
+    - host: customer1.n8n-staging.owoicho.org
       http:
         paths:
           - path: /
